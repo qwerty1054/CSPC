@@ -6,7 +6,8 @@ __pycache__/
 # Pytest / testing cache
 .pytest_cache/
 
-# Environments (optional precaution)
+# Environments
 .venv/
 env/
 venv/
+.vscode/
