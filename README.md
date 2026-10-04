@@ -15,3 +15,9 @@ conda activate cspc
 **Tests:** all passing? yes
 **Conclusion:**
 - This pw demonstrates how runtime of python loops differs from vectorized numpy operations and why numpy is essential in scientific computing. i learned how to manage git commands via terminal, setting up environments, understood the importance of .gitignore and environment.yml files, learned structuring the project, making commits and pushing to github. Writing tests with pytest helped me make sure that code matches the actual physical decay law
+
+## PW1 - Lab B: Data, Plotting, and Automation
+
+**observations:** the dataset decay_observed.csv shows the number of measured particles decreasing over time during redioactive decay
+**comparison:** observed scatter plot matches the theoretical curve very closely, so experimental dats fits the exponential deca law
+**snakemake pipeline:** snakemake automates building figure.png from csv and script files, rerunning plot.py only when there are changes in input files
