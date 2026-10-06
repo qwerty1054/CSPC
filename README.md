@@ -21,3 +21,13 @@ conda activate cspc
 **observations:** the dataset decay_observed.csv shows the number of measured particles decreasing over time during redioactive decay
 **comparison:** observed scatter plot matches the theoretical curve very closely, so experimental dats fits the exponential deca law
 **snakemake pipeline:** snakemake automates building figure.png from csv and script files, rerunning plot.py only when there are changes in input files
+
+## PW2 - Lab A: Motion from Tracking Data
+
+**acceleration noise:** while finding derivative of position to find acceleration we are dividing by small numbers which amplifies the error
+**recovery by integration** we observe smooth curves, because while integration random positive and negative spikes cancel each other out
+
+**mean acceleration:** -8.58 m/s^2
+**noise:** 28.72 m/s^2
+the noise in acceleration graph is high but the mean value still stays around -9.81 m/s^2
+
