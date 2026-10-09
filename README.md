@@ -31,3 +31,34 @@ conda activate cspc
 **noise:** 28.72 m/s^2
 the noise in acceleration graph is high but the mean value still stays around -9.81 m/s^2
 
+## PW2 - Lab B: Motion from Tracking Data
+
+    **2A**
+Gradient descent result for f: 2.9999963220107015
+Newton's method result for f: 3.0
+SLSQP result for f: 3.0
+    **2B**
+with x0=0
+1. Gradient Descent: x =-1.300834  starting from x0=0.0
+2. Newton's method: x=0.169938, d2g=-5.653451 starting from x0=0.0
+3. SLSQP: x=-1.300857 starting from x0=0.0
+
+with x0=2.0
+1. Gradient Descent: x =1.130910  starting from x0=2.0
+2. Newton's method: x=1.130901, d2g=9.347248 starting from x0=2.0
+3. SLSQP: x=-1.300639 starting from x0=2.0
+
+**3 methods compared:** 
+in 2A we have a convex function with one global minimum, therefore newton and slsqp are the same, gradient is slightly off due to it being dependant on steps
+
+in 2B the function is complex with multiple curves, therefore the methods dont always agree. 
+different starting points give different results. newtons method found the nearest local minimums in each try, which were different.in algotithms with big steps like slsqp it can step out of the valley and "accidentally" find a global minimum like in our situation
+
+the starting point determines which valley gradient decent enters, thats why it affects the results
+
+**fitted rate constant:**0.261761
+**titration equivalence point:**50.000000 ml
+
+x (Newton): 0.663848
+x (SLSQP): 0.663847
+Equilibrium values: H2 = 0.336152, I2 = 0.336152, HI = 1.327695
